@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    class="com.lb.material_stuff_library.internal.AlertController$RecycleListView"
+    android:cacheColorHint="@null"
+    android:divider="?attr/adpListDivider"
+    android:overScrollMode="ifContentScrolls"
+    android:scrollbars="vertical"
+    android:textAlignment="viewStart"
+    tools:ignore="UnusedAttribute" />

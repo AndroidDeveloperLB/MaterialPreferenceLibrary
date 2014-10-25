@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="alertDialogProTheme" format="reference" />
+    <attr name="alertDialogProStyle" format="reference" />
+
+    <declare-styleable name="AlertDialogProStyle">
+        <attr name="adpBackground" format="reference" />
+        <attr name="adpTitleDividerBackground" format="reference|color" />
+        <attr name="adpTitleDividerHeight" format="dimension" />
+        <attr name="adpTitleHeight" format="dimension" />
+        <attr name="adpListItemHeight" format="dimension" />
+        <attr name="adpListItemTextColor" format="dimension" />
+        <attr name="adpListDivider" format="dimension" />
+        <attr name="adpListItemBackground" format="reference" />
+        <attr name="adpButtonBarDividerHorizontal" format="reference" />
+        <attr name="adpButtonBarDividerVertical" format="reference" />
+        <attr name="adpButtonBarStyle" format="reference" />
+        <attr name="adpButtonBarButtonStyle" format="reference" />
+
+        <attr name="adpLayout" format="reference" />
+        <attr name="adpListLayout" format="reference" />
+        <attr name="adpListItemLayout" format="reference" />
+        <attr name="adpMultiChoiceItemLayout" format="reference" />
+        <attr name="adpSingleChoiceItemLayout" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="LinearLayoutIcs">
+        <!-- Drawable to use as a vertical divider between buttons. -->
+        <attr name="llDivider" format="reference" />
+        <!-- Setting for which dividers to show. -->
+        <attr name="llShowDividers">
+            <flag name="none" value="0" />
+            <flag name="beginning" value="1" />
+            <flag name="middle" value="2" />
+            <flag name="end" value="4" />
+        </attr>
+        <!-- Size of padding on either end of a divider. -->
+        <attr name="llDividerPadding" format="dimension" />
+    </declare-styleable>
+</resources>
