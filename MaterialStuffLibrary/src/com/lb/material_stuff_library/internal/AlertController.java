@@ -316,7 +316,7 @@ public class AlertController
     if(mView!=null)
       {
       customPanel=(FrameLayout)mWindow.findViewById(R.id.customPanel);
-      final FrameLayout custom=(FrameLayout)mWindow.findViewById(android.R.id.custom);
+      final FrameLayout custom=(FrameLayout)mWindow.findViewById(R.id.custom);
       custom.addView(mView,new LayoutParams(MATCH_PARENT,MATCH_PARENT));
       if(mViewSpacingSpecified)
         custom.setPadding(mViewSpacingLeft,mViewSpacingTop,mViewSpacingRight,mViewSpacingBottom);
