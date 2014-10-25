@@ -2,7 +2,6 @@
 <resources>
 
     <string name="app_name">MaterialStuffLibrary Demo</string>
-    <string name="title_activity_my">AlertDialogPro Demo</string>
     <string name="show_library_default_dialog">Show library\'s default dialog</string>
     <string name="show_material_dialog">Show Material Dialog</string>
     <string name="show_material_light_dialog">Show Material Light Dialog</string>
