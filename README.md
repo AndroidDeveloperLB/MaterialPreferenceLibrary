@@ -8,9 +8,11 @@ This library is based on some other libraries, to support the next features:
  - alert dialogs, with a similar style of Material-Design.
  - PreferenceActivity, with support of an ActionBar (which is actually a toolbar that looks like an ActionBar)
  
-I made it since the current version of the support library doesn't have any of those things.
+I made it since the current version of the support library doesn't have any of those things. I've asked about it on StackOverflow ([here](http://stackoverflow.com/q/26473648) and [here](http://stackoverflow.com/q/26495530/)), but what I got wasn't enough to support what I needed.
 
-
+What this library doesn't do
+==
+It doesn't style the preferences, and since it's heavily based on [this library](https://github.com/fengdai/AlertDialogPro), it has the same functionality and style for the dialogs. However, I've cleaned the code and removed un-needed files, so it's lighter.
 
 Thanks
 ==
