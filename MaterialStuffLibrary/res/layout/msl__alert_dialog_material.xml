@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentPanel"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="@dimen/floating_window_margin_bottom"
@@ -10,8 +11,7 @@
     android:layout_marginStart="@dimen/floating_window_margin_left"
     android:layout_marginTop="@dimen/floating_window_margin_top"
     android:background="?adpBackground"
-    android:orientation="vertical"
-    tools:ignore="Overdraw" >
+    android:orientation="vertical" >
 
     <LinearLayout
         android:id="@+id/topPanel"
@@ -91,34 +91,40 @@
 
     <LinearLayout
         android:id="@+id/buttonPanel"
-        style="?attr/adpButtonBarStyle"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layoutDirection="locale"
-        android:padding="16dip"
-        tools:ignore="UnusedAttribute" >
+        android:gravity="end"
+        android:orientation="vertical"
+        android:padding="16dip" >
 
-        <Button
-            android:id="@+id/button3"
-            style="?attr/adpButtonBarButtonStyle"
+        <LinearLayout
+            style="?attr/adpButtonBarStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:maxLines="2" />
+            android:layoutDirection="locale"
+            tools:ignore="UnusedAttribute,UselessParent" >
 
-        <Button
-            android:id="@+id/button2"
-            style="?attr/adpButtonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:maxLines="2" />
+            <Button
+                android:id="@+id/button3"
+                style="?attr/adpButtonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2" />
 
-        <Button
-            android:id="@+id/button1"
-            style="?attr/adpButtonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:maxLines="2" />
+            <Button
+                android:id="@+id/button2"
+                style="?attr/adpButtonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2" />
+
+            <Button
+                android:id="@+id/button1"
+                style="?attr/adpButtonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2" />
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>
