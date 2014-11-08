@@ -9,16 +9,7 @@ import com.alertdialogpro.R;
 
 public abstract class MaterialPreferenceActivity extends PreferenceActivity
   {
-  private static int getResIdFromAttribute(final Activity activity,final int attr)
-    {
-    if(attr==0)
-      return 0;
-    final TypedValue typedvalueattr=new TypedValue();
-    activity.getTheme().resolveAttribute(attr,typedvalueattr,true);
-    return typedvalueattr.resourceId;
-    }
   private Toolbar _toolbar;
-
   private View    _shadowView;
 
   protected abstract int getPreferencesXmlId();
@@ -46,6 +37,15 @@ public abstract class MaterialPreferenceActivity extends PreferenceActivity
           finish();
           }
       });
+    }
+
+  private static int getResIdFromAttribute(final Activity activity,final int attr)
+    {
+    if(attr==0)
+      return 0;
+    final TypedValue typedvalueattr=new TypedValue();
+    activity.getTheme().resolveAttribute(attr,typedvalueattr,true);
+    return typedvalueattr.resourceId;
     }
 
   protected void setEnabledActionBarShadow(final boolean enable)
