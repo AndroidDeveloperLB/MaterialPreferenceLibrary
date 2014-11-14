@@ -26,7 +26,7 @@
         <View
             android:id="@+id/msl__shadowView"
             android:layout_width="match_parent"
-            android:layout_height="9dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/msl__action_bar_shadow"
             android:visibility="gone" />
     </FrameLayout>
