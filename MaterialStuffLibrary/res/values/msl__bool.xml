@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="msl__at_least_api21" type="bool">false</item>
+
+</resources>

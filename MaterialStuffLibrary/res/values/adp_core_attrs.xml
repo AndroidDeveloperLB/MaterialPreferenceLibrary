@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="alertDialogProTheme" format="reference" />
+    <attr name="alertDialogProStyle" format="reference" />
+
+    <declare-styleable name="AlertDialogPro">
+        <attr name="adpTitleDividerBackground" format="reference|color" />
+        <attr name="adpTitleDividerHeight" format="dimension" />
+        <attr name="adpTitleHeight" format="dimension" />
+        <attr name="adpMessageTextAppearance" format="reference" />
+        <attr name="adpListItemHeight" format="dimension" />
+        <attr name="adpListItemTextColor" format="reference|color" />
+        <attr name="adpListItemTextAppearance" format="reference" />
+        <attr name="adpListSingleChoiceTextAppearance" format="reference" />
+        <attr name="adpListMultiChoiceTextAppearance" format="reference" />
+        <attr name="adpListDivider" format="reference" />
+        <attr name="adpListItemBackground" format="reference" />
+        <attr name="adpButtonBarDividerHorizontal" format="reference" />
+        <attr name="adpButtonBarDividerVertical" format="reference" />
+        <attr name="adpButtonBarStyle" format="reference" />
+        <attr name="adpButtonBarPositiveButtonStyle" format="reference" />
+        <attr name="adpButtonBarNegativeButtonStyle" format="reference" />
+        <attr name="adpButtonBarNeutralButtonStyle" format="reference" />
+        <attr name="adpButtonBarButtonStyle" format="reference" />
+
+        <attr name="adpLayout" format="reference" />
+        <attr name="adpListLayout" format="reference" />
+        <attr name="adpListItemLayout" format="reference" />
+        <attr name="adpMultiChoiceItemLayout" format="reference" />
+        <attr name="adpSingleChoiceItemLayout" format="reference" />
+    </declare-styleable>
+
+</resources>
