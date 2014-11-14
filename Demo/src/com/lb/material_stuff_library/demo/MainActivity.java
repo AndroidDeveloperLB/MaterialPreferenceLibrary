@@ -8,8 +8,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import com.alertdialogpro.AlertDialogPro;
 import com.alertdialogpro.demo.R;
-import com.lb.material_stuff_library.AlertDialogPro;
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener
   {
