@@ -20,7 +20,7 @@ Requirements
 ==
 This library needs:
  - API 8 and above.
- - AppCompat v4 and v7.
+ - AppCompat v7.
 
 That's it.
 
