@@ -1,38 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@id/adp_parentPanel"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@id/adp_topPanel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <LinearLayout
             android:id="@id/adp_title_template"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|start"
+            android:minHeight="?attr/adpTitleMinHeight"
             android:orientation="horizontal"
-            android:paddingEnd="@dimen/alert_dialog_padding_material"
-            android:paddingLeft="@dimen/alert_dialog_padding_material"
-            android:paddingRight="@dimen/alert_dialog_padding_material"
-            android:paddingStart="@dimen/alert_dialog_padding_material"
-            android:paddingTop="@dimen/alert_dialog_padding_top_material" >
+            android:paddingEnd="@dimen/adp_mtrl_alert_dialog_padding"
+            android:paddingLeft="@dimen/adp_mtrl_alert_dialog_padding"
+            android:paddingRight="@dimen/adp_mtrl_alert_dialog_padding"
+            android:paddingStart="@dimen/adp_mtrl_alert_dialog_padding"
+            android:paddingTop="@dimen/adp_mtrl_alert_dialog_padding_top">
 
             <ImageView
                 android:id="@id/adp_icon"
                 android:layout_width="32dip"
                 android:layout_height="32dip"
-                android:layout_marginEnd="8dip"
                 android:layout_marginRight="8dip"
                 android:scaleType="fitCenter"
-                android:src="@null"
-                tools:ignore="ContentDescription" />
+                android:src="@null" />
 
             <com.alertdialogpro.internal.DialogTitle
                 android:id="@id/adp_alertTitle"
@@ -42,8 +40,7 @@
                 android:ellipsize="end"
                 android:gravity="start"
                 android:singleLine="true"
-                android:textAlignment="viewStart"
-                tools:ignore="UnusedAttribute" />
+                android:textAlignment="viewStart" />
         </LinearLayout>
         <!-- If the client uses a customTitle, it will be added here. -->
     </LinearLayout>
@@ -54,34 +51,32 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:minHeight="48dp"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <ScrollView
             android:id="@id/adp_scrollView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:clipToPadding="false"
-            tools:ignore="UselessParent" >
+            android:clipToPadding="false">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@id/adp_message"
                     style="?attr/adpMessageTextAppearance"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/alert_dialog_padding_material"
-                    android:paddingRight="@dimen/alert_dialog_padding_material"
-                    android:paddingTop="@dimen/alert_dialog_padding_top_material"
-                    android:textIsSelectable="@bool/msl__at_least_api21" />
+                    android:paddingLeft="@dimen/adp_mtrl_alert_dialog_padding"
+                    android:paddingRight="@dimen/adp_mtrl_alert_dialog_padding"
+                    android:paddingTop="@dimen/adp_mtrl_alert_dialog_padding_top" />
 
                 <View
                     android:id="@id/adp_textSpacerNoButtons"
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/alert_dialog_padding_top_material"
+                    android:layout_height="@dimen/adp_mtrl_alert_dialog_padding_top"
                     android:visibility="gone" />
             </LinearLayout>
         </ScrollView>
@@ -92,7 +87,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:minHeight="48dp" >
+        android:minHeight="48dp">
 
         <FrameLayout
             android:id="@id/adp_custom"
@@ -112,8 +107,7 @@
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
         android:paddingStart="12dp"
-        android:paddingTop="8dp"
-        tools:ignore="UnusedAttribute" >
+        android:paddingTop="8dp">
 
         <Button
             android:id="@id/adp_button3"
