@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lint>
-
-    <issue
-        id="InlinedApi"
-        severity="ignore" />
-
-    <issue
-        id="RtlEnabled"
-        severity="ignore" />
-
-    <issue id="SelectableText" >
-
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="InlinedApi" severity="ignore" />
+    <issue id="RtlEnabled" severity="ignore" />
+    <issue id="SelectableText">
         <ignore path="res/layout/adp_select_dialog_item_material.xml" />
     </issue>
-
 </lint>
