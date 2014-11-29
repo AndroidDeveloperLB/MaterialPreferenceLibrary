@@ -30,7 +30,6 @@
             android:src="@drawable/msl__action_bar_shadow"
             android:visibility="gone"
             tools:ignore="ContentDescription" />
-
     </FrameLayout>
 
 </LinearLayout>

@@ -44,7 +44,6 @@
                 android:singleLine="true"
                 android:textAlignment="viewStart"
                 tools:ignore="UnusedAttribute" />
-
         </LinearLayout>
         <!-- If the client uses a customTitle, it will be added here. -->
     </LinearLayout>
@@ -72,11 +71,12 @@
                 <TextView
                     android:id="@id/adp_message"
                     style="?attr/adpMessageTextAppearance"
-                    android:layout_width="match_parent" android:textIsSelectable="true"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/adp_mtrl_alert_dialog_padding"
                     android:paddingRight="@dimen/adp_mtrl_alert_dialog_padding"
-                    android:paddingTop="@dimen/adp_mtrl_alert_dialog_padding_top" />
+                    android:paddingTop="@dimen/adp_mtrl_alert_dialog_padding_top"
+                    android:textIsSelectable="true" />
 
                 <View
                     android:id="@id/adp_textSpacerNoButtons"
