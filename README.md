@@ -33,8 +33,6 @@ Thanks
 The project consists of some libraries and websites I've looked at :
  - AlertDialogPro (for the alert dialogs):
  https://github.com/fengdai/AlertDialogPro
- - ActionBarSherlock (for the shadow below the action bar) :
- http://actionbarsherlock.com/
  - Some code I got from my own app:
  https://play.google.com/store/apps/details?id=com.lb.app_manager
  - The support library of Google, of course:
