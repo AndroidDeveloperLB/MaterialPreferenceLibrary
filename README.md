@@ -1,5 +1,5 @@
-MaterialStuffLibrary
-====================
+ActionBarPreferenceActivityLibrary
+==================================
 
 Allows to have an ActionBar even on PreferenceActivity, even for pre-Honeycomb versions of Android.
 
@@ -7,6 +7,10 @@ All this library does is to simply put a Toolbar at the top of the PreferenceAct
 
 Screenshots
 ==
+Gingerbread :
+![enter image description here](https://raw.githubusercontent.com/AndroidDeveloperLB/MaterialStuffLibrary/master/1.png)
+
+Lollipop : 
 ![enter image description here](https://raw.githubusercontent.com/AndroidDeveloperLB/MaterialStuffLibrary/master/2.png)
 
 Requirements
