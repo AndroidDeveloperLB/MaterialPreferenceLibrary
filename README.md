@@ -7,8 +7,6 @@ All this library does is to simply put a Toolbar at the top of the PreferenceAct
 
 Screenshots
 ==
-![enter image description here](https://raw.githubusercontent.com/AndroidDeveloperLB/MaterialStuffLibrary/master/1.png)
-
 ![enter image description here](https://raw.githubusercontent.com/AndroidDeveloperLB/MaterialStuffLibrary/master/2.png)
 
 Requirements
