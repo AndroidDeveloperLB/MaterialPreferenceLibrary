@@ -8,15 +8,13 @@ import com.lb.action_bar_preference_activity_library.ActionBarPreferenceActivity
 
 public class SettingsActivity extends ActionBarPreferenceActivity
   {
-  @SuppressWarnings("deprecation")
   @Override
   protected void onCreate(final Bundle savedInstanceState)
     {
     super.onCreate(savedInstanceState);
-    addPreferencesFromResource(R.xml.pref_general);
     // NOTE: do not use ActionBar in any way. Instead, use only the toolbar , as such:
     final Toolbar toolbar=getToolbar();
-    toolbar.setTitle("Settings");
+    toolbar.setTitle(R.string.settings);
     getMenuInflater().inflate(R.menu.activity_main,toolbar.getMenu());
     // I've added this for those who like to have the shadow below the actionbar
     setEnabledActionBarShadow(true);
