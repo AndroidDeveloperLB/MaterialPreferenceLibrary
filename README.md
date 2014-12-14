@@ -1,14 +1,9 @@
 MaterialStuffLibrary
 ====================
 
-Adds material-style dialogs, and also allow to have an ActionBar even on PreferenceActivity
+Allows to have an ActionBar even on PreferenceActivity, even for pre-Honeycomb versions of Android.
 
-This library is based on some other libraries, to support the next features:
-
- - alert dialogs, with a similar style of Material-Design.
- - PreferenceActivity, with support of an ActionBar (which is actually a toolbar that looks like an ActionBar)
- 
-I made it since the current version of the support library doesn't have any of those things. I've asked about it on StackOverflow ([here](http://stackoverflow.com/q/26473648) and [here](http://stackoverflow.com/q/26495530/)), but what I got wasn't enough to support what I needed.
+All this library does is to simply put a Toolbar at the top of the PreferenceActivity, and you need to use the Toolbar instead of the ActionBar.
 
 Screenshots
 ==
@@ -26,13 +21,15 @@ That's it.
 
 What this library doesn't do
 ==
-It doesn't style the preferences, and since it's heavily based on [this library](https://github.com/fengdai/AlertDialogPro), it has the same functionality and style for the dialogs. However, I've cleaned the code and removed un-needed files, so it's lighter.
+Sadly, it doesn't style the preferences, but you can use the one of the support library if you wish.
+
+It has handled dialogs in the past, but no longer. If you wish to have material-style dialogs, you can use this great library:
+    https://github.com/fengdai/AlertDialogPro
 
 Thanks
 ==
-The project consists of some libraries and websites I've looked at :
- - AlertDialogPro (for the alert dialogs):
- https://github.com/fengdai/AlertDialogPro
+Didn't get a lot of code from others:
+ 
  - Some code I got from my own app:
  https://play.google.com/store/apps/details?id=com.lb.app_manager
  - The support library of Google, of course:
