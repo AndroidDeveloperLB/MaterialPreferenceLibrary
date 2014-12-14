@@ -1,13 +1,29 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light" />
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light.NoActionBar" />
 
     <style name="AppTheme" parent="AppBaseTheme">
-        <!-- this will set the actionbar background color, which currently is some sort of white -->
+        <item name="android:listSeparatorTextViewStyle">@style/PreferenceListHeader</item>
         <item name="colorPrimary">#ffF1F1F1</item>
-        <!-- theses are just for the various textViews. I just like the default ones as of the primary color for the preference screen... -->
-        <item name="android:textColorSecondary">@color/abc_primary_text_material_light</item>
-        <item name="android:textColorTertiary">@color/abc_primary_text_material_light</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
+        <item name="android:textColorTertiary">@android:color/black</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="colorControlNormal">#FF000000</item>
+    </style>
+
+    <!-- just a fancy preference category title -->
+    <style name="PreferenceListHeader">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">#FF009688</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>
