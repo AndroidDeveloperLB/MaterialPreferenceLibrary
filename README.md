@@ -30,6 +30,8 @@ Sadly, it doesn't style the preferences, but you can use the one of the support 
 It has handled dialogs in the past, but no longer. If you wish to have material-style dialogs, you can use this great library:
     https://github.com/fengdai/AlertDialogPro
 
+Also, note that in order to add action items, you need to do it completely via code, without using XML. Otherwise, on some Android versions (or all?), the action items will all gather inside the overflow menu item.
+
 Thanks
 ==
 Didn't get a lot of code from others:
