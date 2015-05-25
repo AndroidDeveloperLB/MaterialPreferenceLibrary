@@ -14,17 +14,17 @@ Supported preferences are:
 - **SwitchPreference**
 - **TwoStatePreference**
 
-Sample and screenshots
+Sample 
 ==================================
 Just check the code, or see how it works on my app, here:
-https://play.google.com/store/apps/details?id=com.lb.app_manager
-
-**Screensots:**
-
-**Gingerbread :**
+![enter image description here][(https://raw.githubusercontent.com/AndroidDeveloperLB/ActionBarPreferenceActivity/master/en_app_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=com.lb.app_manager)
 
 
-**Lollipop :** 
+Screenshots
+==================================
+Soon
+
+
 
 Notes
 ==================================
@@ -38,6 +38,14 @@ https://github.com/Machinarius/PreferenceFragment-Compat
 https://github.com/kolavar/android-support-v4-preferencefragment
 6. In order to add **action items**, you need to do it completely via code, without using XML. Otherwise, on some Android versions (or all?), the action items will all gather inside the overflow menu item.
 7. Some **attributes** should be used using Android's framework, and some using mine. Sorry for the confusion. 
+8. **Preference selection** obviously can't have ripples, but it should at least be possible to have Kitkat style selection for pre-Kitkat versions.
+9. Sadly, it **doesn't support all kinds of preferences**. Currently, those are missing:
+ - RingtonePreference
+ - MultiSelectListPreference
+ - CheckBoxPreference
+and others...
+
+
 
 Contribution is appreciated. Please try to be "loyal" to the original code of Android, as I've tried.
 
@@ -48,16 +56,6 @@ This library needs:
  - AppCompat v7.
 
 That's it.
-
-What this library doesn't do
-==
-Sadly, it doesn't support all kinds of preferences. Currently, those are missing:
- - RingtonePreference
- - MultiSelectListPreference
- - CheckBoxPreference
-and others...
-
-Also, note that 
 
 Thanks
 ==
