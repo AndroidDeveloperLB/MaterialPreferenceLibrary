@@ -22,8 +22,9 @@ https://play.google.com/store/apps/details?id=com.lb.app_manager
 
 Screenshots
 ==================================
-Soon
+Here's a demo of how the library performs on both Gingerbread and Lollipop, including how the native preferences look and behave:
 
+![demo](https://raw.githubusercontent.com/AndroidDeveloperLB/ActionBarPreferenceActivity/master/demo.gif)
 
 
 Notes
