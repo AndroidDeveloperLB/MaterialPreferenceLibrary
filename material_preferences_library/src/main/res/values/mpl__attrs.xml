@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--preferences:-->
+  <!-- Default style for DialogPreference. -->
+  <attr name="dialogPreferenceStyle" format="reference"/>
+  <!-- Default style for EditTextPreference. -->
+  <attr name="editTextPreferenceStyle" format="reference"/>
+  <!-- Default style for switch preferences. -->
+  <attr name="switchPreferenceStyle" format="reference"/>
+
+  <!-- Base attributes available to ListPreference. -->
+  <declare-styleable name="ListPreference">
+    <!-- The human-readable array to present as a list. Each entry must have a corresponding
+         index in entryValues. -->
+    <attr name="entries" format="reference"/>
+    <!-- The array to find the value to save for a preference when an entry from
+         entries is selected. If a user clicks on the second item in entries, the
+         second item in this array will be saved to the preference. -->
+    <attr name="entryValues" format="reference"/>
+  </declare-styleable>
+
+  <!-- Base attributes available to DialogPreference. -->
+  <declare-styleable name="DialogPreference">
+    <!-- The title in the dialog. -->
+    <attr name="dialogTitle" format="string"/>
+    <!-- The message in the dialog. If a dialogLayout is provided and contains
+         a TextView with ID android:id/message, this message will be placed in there. -->
+    <attr name="dialogMessage" format="string"/>
+    <!-- The icon for the dialog. -->
+    <attr name="dialogIcon" format="reference"/>
+    <!-- The positive button text for the dialog. Set to @null to hide the positive button. -->
+    <attr name="positiveButtonText" format="string"/>
+    <!-- The negative button text for the dialog. Set to @null to hide the negative button. -->
+    <attr name="negativeButtonText" format="string"/>
+    <!-- A layout to be used as the content View for the dialog. By default, this shouldn't
+         be needed. If a custom DialogPreference is required, this should be set. For example,
+         the EditTextPreference uses a layout with an EditText as this attribute. -->
+    <attr name="dialogLayout" format="reference"/>
+  </declare-styleable>
+
+  <declare-styleable name="SwitchPreference">
+    <!-- The summary for the Preference in a PreferenceActivity screen when the
+         SwitchPreference is checked. If separate on/off summaries are not
+         needed, the summary attribute can be used instead. -->
+    <attr name="summaryOn" format="string"/>
+    <!-- The summary for the Preference in a PreferenceActivity screen when the
+         SwitchPreference is unchecked. If separate on/off summaries are not
+         needed, the summary attribute can be used instead. -->
+    <attr name="summaryOff" format="string"/>
+    <!-- The text used on the switch itself when in the "on" state.
+         This should be a very SHORT string, as it appears in a small space. -->
+    <attr name="switchTextOn" format="string"/>
+    <!-- The text used on the switch itself when in the "off" state.
+         This should be a very SHORT string, as it appears in a small space. -->
+    <attr name="switchTextOff" format="string"/>
+    <!-- The state (true for on, or false for off) that causes dependents to be disabled. By default,
+         dependents will be disabled when this is unchecked, so the value of this preference is false. -->
+    <attr name="disableDependentsState" format="boolean"/>
+  </declare-styleable>
+</resources>

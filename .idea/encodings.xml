@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values/ids_preferences.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/material_preferences_library/src/main/java/com/lb/material_preferences_library/PreferenceActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/material_preferences_library/src/main/java/com/lb/material_preferences_library/custom_preferences/DialogPreference.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/material_preferences_library/src/main/java/com/lb/material_preferences_library/custom_preferences/EditTextPreference.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/material_preferences_library/src/main/java/com/lb/material_preferences_library/custom_preferences/ListPreference.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/material_preferences_library/src/main/java/com/lb/material_preferences_library/custom_preferences/NumberEditTextPreference.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/material_preferences_library/src/main/java/com/lb/material_preferences_library/custom_preferences/Preference.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/material_preferences_library/src/main/java/com/lb/material_preferences_library/custom_preferences/PreferenceManagerEx.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/material_preferences_library/src/main/java/com/lb/material_preferences_library/custom_preferences/SwitchPreference.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/material_preferences_library/src/main/res/drawable/mpl__action_bar_shadow.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/material_preferences_library/src/main/res/layout/mpl__preference_activity.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/material_preferences_library/src/main/res/layout/mpl__simple_list_item_single_choice.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/material_preferences_library/src/main/res/layout/mpl__switch_preference.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/material_preferences_library/src/main/res/values/abp__dimens.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/material_preferences_library/src/main/res/values/mpl__attrs.xml" charset="UTF-8" />
+  </component>
+</project>

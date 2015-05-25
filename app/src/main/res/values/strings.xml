@@ -1,0 +1,25 @@
+<resources>
+  <string name="app_name">MaterialPreferences</string>
+
+  <string name="title_activity_settings">Settings</string>
+
+  <string name="pref_theme">theme</string>
+  <string name="pref_theme_default">dark</string>
+  <string-array name="pref_theme_list_entries">
+    <item>Dark</item>
+    <item>Light</item>
+  </string-array>
+  <string-array name="pref_theme_list_values">
+    <item>dark</item>
+    <item>light</item>
+  </string-array>
+
+  <string-array name="pref_example_list_entries">
+    <item>Item1</item>
+    <item>Item2</item>
+  </string-array>
+  <string-array name="pref_example_list_values">
+    <item>item1</item>
+    <item>item2</item>
+  </string-array>
+</resources>

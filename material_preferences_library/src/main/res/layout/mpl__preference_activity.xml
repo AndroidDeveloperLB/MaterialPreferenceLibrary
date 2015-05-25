@@ -1,0 +1,38 @@
+<android.support.v7.widget.LinearLayoutCompat
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context="com.lb.material_preferences_library.PreferenceActivity">
+
+  <android.support.v7.widget.Toolbar
+    android:id="@+id/abp__toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:elevation="4dp"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="?attr/actionBarTheme"
+    app:theme="?attr/actionBarTheme"
+    tools:ignore="UnusedAttribute"/>
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.internal.widget.ListViewCompat
+      android:id="@android:id/list"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+    <ImageView
+      android:id="@+id/abp__shadowView"
+      android:layout_width="match_parent"
+      android:layout_height="4dp"
+      android:src="@drawable/mpl__action_bar_shadow"
+      tools:ignore="ContentDescription"/>
+  </FrameLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>

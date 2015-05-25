@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatCheckedTextView
+  android:id="@android:id/text1"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:gravity="center_vertical"
+  android:minHeight="?attr/listPreferredItemHeightSmall"
+  android:paddingEnd="?attr/listPreferredItemPaddingRight"
+  android:paddingLeft="?attr/listPreferredItemPaddingLeft"
+  android:paddingRight="?attr/listPreferredItemPaddingRight"
+  android:paddingStart="?attr/listPreferredItemPaddingLeft"
+  android:textAppearance="?attr/textAppearanceListItemSmall"
+  android:checkMark="?android:attr/listChoiceIndicatorSingle"
+  tools:ignore="NewApi"/>

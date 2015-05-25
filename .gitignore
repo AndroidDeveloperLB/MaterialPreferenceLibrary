@@ -1,8 +1,7 @@
-/MaterialStuffLibrary/gen
-/MaterialStuffLibrary/bin
-/Demo/bin
-/Demo/gen
-/ActionBarPreferenceActivityDemo/bin
-/ActionBarPreferenceActivityDemo/gen
-/ActionBarPreferenceActivityLibrary/gen
-/ActionBarPreferenceActivityLibrary/bin
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures

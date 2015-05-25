@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+  <style name="MPL_PreferenceListHeader">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_marginBottom">16dp</item>
+    <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+    <item name="android:textColor">?attr/colorAccent</item>
+    <item name="android:paddingStart" tools:targetApi="17">?attr/listPreferredItemPaddingLeft
+    </item>
+    <item name="android:paddingLeft">?attr/listPreferredItemPaddingLeft</item>
+    <item name="android:paddingEnd" tools:targetApi="17">?attr/listPreferredItemPaddingRight
+    </item>
+    <item name="android:paddingRight">?attr/listPreferredItemPaddingRight</item>
+    <item name="android:paddingTop">16dp</item>
+  </style>
+
+</resources>
