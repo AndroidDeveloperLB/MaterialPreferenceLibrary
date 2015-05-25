@@ -17,7 +17,7 @@ Supported preferences are:
 Sample 
 ==================================
 Just check the code, or see how it works on my app, here:
-![enter image description here][(https://raw.githubusercontent.com/AndroidDeveloperLB/ActionBarPreferenceActivity/master/en_app_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=com.lb.app_manager)
+https://play.google.com/store/apps/details?id=com.lb.app_manager
 
 
 Screenshots
