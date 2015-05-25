@@ -39,12 +39,12 @@ public class Preference extends android.preference.Preference
 
   public Preference(Context context,AttributeSet attrs)
     {
-    this(context,attrs,0);
+    super(context,attrs);
     }
 
   public Preference(Context context)
     {
-    this(context,null);
+    super(context);
     }
 
   }

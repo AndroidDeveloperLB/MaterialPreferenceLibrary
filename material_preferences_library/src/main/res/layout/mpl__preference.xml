@@ -36,7 +36,7 @@
   android:paddingStart="?attr/listPreferredItemPaddingLeft"
   tools:ignore="NewApi">
 
-  <!--<LinearLayout-->
+  <!--<android.support.v7.widget.LinearLayoutCompat-->
     <!--android:id="@+id/icon_frame"-->
     <!--android:layout_width="wrap_content"-->
     <!--android:layout_height="wrap_content"-->
@@ -53,7 +53,7 @@
       <!--android:layout_height="wrap_content"-->
       <!--android:maxWidth="48dp"-->
       <!--android:maxHeight="48dp" />-->
-  <!--</LinearLayout>-->
+  <!--</android.support.v7.widget.LinearLayoutCompat>-->
 
   <RelativeLayout
     android:layout_width="0px"
