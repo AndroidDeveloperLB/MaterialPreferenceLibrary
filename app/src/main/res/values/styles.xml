@@ -1,16 +1,26 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-  <style name="AppTheme.Dark" parent="@style/Theme.AppCompat">
+  <style name="AppTheme.Dark" parent="@style/Theme.AppCompat.NoActionBar">
     <item name="colorAccent">@color/accent_color</item>
     <item name="android:colorAccent" tools:ignore="NewApi">@color/accent_color</item>
     <item name="android:listSeparatorTextViewStyle">@style/MPL_PreferenceListHeader</item>
+    <item name="colorPrimary">#FF03A9F4</item>
+    <item name="colorPrimaryDark">#FF0288D1</item>
   </style>
 
-  <style name="AppTheme.Light" parent="@style/Theme.AppCompat.Light">
+  <style name="AppTheme.Light" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
     <item name="colorAccent">@color/accent_color</item>
     <item name="android:colorAccent" tools:ignore="NewApi">@color/accent_color</item>
     <item name="android:listSeparatorTextViewStyle">@style/MPL_PreferenceListHeader</item>
+    <item name="colorPrimary">#FF03A9F4</item>
+    <item name="colorPrimaryDark">#FF0288D1</item>
+    <item name="actionBarTheme">@style/AppTheme.ActionBarTheme.Light</item>
   </style>
 
+  <style name="AppTheme.ActionBarTheme.Light" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+  </style>
 
 </resources>
