@@ -13,6 +13,7 @@ Supported preferences are:
 - **Preference**
 - **SwitchPreference**
 - **TwoStatePreference**
+- **CheckBoxPreference**
 
 Sample 
 ==================================
@@ -46,7 +47,6 @@ https://github.com/kolavar/android-support-v4-preferencefragment
 9. Sadly, it **doesn't support all kinds of preferences**. Currently, those are missing:
  - RingtonePreference
  - MultiSelectListPreference
- - CheckBoxPreference
  - others ?
 
 
