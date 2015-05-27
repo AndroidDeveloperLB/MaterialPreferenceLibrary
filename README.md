@@ -16,15 +16,12 @@ Supported preferences are:
 
 Sample 
 ==================================
-Just check the code, or see how it works on my app, here:
+Just check the code (it has a sample inside), or see how it works on my app, here:
 
 <a href="https://play.google.com/store/apps/details?id=com.lb.app_manager">
   <img alt="sample app"
        src="en_app_rgb_wo_60.png" />
 </a>
-
-
-
 
 Screenshots
 ==================================
