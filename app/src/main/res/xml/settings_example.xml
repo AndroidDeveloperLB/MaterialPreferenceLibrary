@@ -48,6 +48,13 @@
       android:title="SwitchPreference title"
       app:summaryOff="summaryOff"
       app:summaryOn="summaryOn"/>
+
+    <com.lb.material_preferences_library.custom_preferences.CheckBoxPreference
+      android:defaultValue="true"
+      android:key="checkboxPref"
+      android:summary="CheckBoxPreference summary"
+      android:title="CheckBoxPreference title"
+      />
   </PreferenceCategory>
 
   <PreferenceCategory
@@ -85,6 +92,7 @@
       android:positiveButtonText="@null"
       android:summary="%s"
       android:title="ListPreference title"/>
+
   </PreferenceCategory>
 
 
