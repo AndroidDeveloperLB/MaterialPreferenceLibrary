@@ -47,7 +47,7 @@ https://github.com/kolavar/android-support-v4-preferencefragment
  - RingtonePreference
  - MultiSelectListPreference
  - CheckBoxPreference
-and others...
+ - others ?
 
 
 
@@ -64,3 +64,7 @@ That's it.
 Thanks
 ==
 Android's code ?
+
+License
+==
+It's Apache2 . Do with it what you wish. Credits are appreciated :)
