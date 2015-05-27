@@ -16,9 +16,12 @@ Supported preferences are:
 
 Sample 
 ==================================
-Just check the code, or see how it works on my app, here:
-https://play.google.com/store/apps/details?id=com.lb.app_manager
+Just check the code (it has a sample inside), or see how it works on my app, here:
 
+<a href="https://play.google.com/store/apps/details?id=com.lb.app_manager">
+  <img alt="sample app"
+       src="en_app_rgb_wo_60.png" />
+</a>
 
 Screenshots
 ==================================
@@ -44,7 +47,7 @@ https://github.com/kolavar/android-support-v4-preferencefragment
  - RingtonePreference
  - MultiSelectListPreference
  - CheckBoxPreference
-and others...
+ - others ?
 
 
 
@@ -61,3 +64,7 @@ That's it.
 Thanks
 ==
 Android's code ?
+
+License
+==
+It's Apache2 . Do with it what you wish. Credits are appreciated :)

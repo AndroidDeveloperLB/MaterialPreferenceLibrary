@@ -95,13 +95,6 @@ public class EditTextPreference extends DialogPreference
     setDialogLayoutResource(R.layout.mpl__edittext_dialog_preference);
     }
 
-  @Override
-  protected void onPrepareDialogBuilder(final Builder builder)
-    {
-    super.onPrepareDialogBuilder(builder);
-    builder.setMessage(getDialogMessage());
-    }
-
   /**
    * Saves the text to the {@link SharedPreferences}.
    *
