@@ -14,6 +14,8 @@ Supported preferences are:
 - **SwitchPreference**
 - **TwoStatePreference**
 - **CheckBoxPreference**
+ 
+In addition to all of those, I've disabled the truncating of the text of all the supported preferences, so that translated text will still be fully shown. Do try ot make them short though.
 
 Sample 
 ==================================
