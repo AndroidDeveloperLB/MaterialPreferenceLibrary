@@ -13,6 +13,9 @@ Supported preferences are:
 - **Preference**
 - **SwitchPreference**
 - **TwoStatePreference**
+- **CheckBoxPreference**
+ 
+In addition to all of those, I've disabled the truncating of the text of all the supported preferences, so that translated text will still be fully shown. Do try ot make them short though.
 
 Sample 
 ==================================
@@ -46,7 +49,6 @@ https://github.com/kolavar/android-support-v4-preferencefragment
 9. Sadly, it **doesn't support all kinds of preferences**. Currently, those are missing:
  - RingtonePreference
  - MultiSelectListPreference
- - CheckBoxPreference
  - others ?
 
 
