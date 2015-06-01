@@ -9,7 +9,7 @@ import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
 
-public abstract class PreferenceActivity extends android.preference.PreferenceActivity
+public abstract class PreferenceActivity extends AppCompatPreferenceActivity
   {
   private Toolbar _toolbar;
 
