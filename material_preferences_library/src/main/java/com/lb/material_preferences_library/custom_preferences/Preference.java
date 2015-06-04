@@ -40,11 +40,21 @@ public class Preference extends android.preference.Preference
   public Preference(Context context,AttributeSet attrs)
     {
     super(context,attrs);
+    if(!_isInitialized)
+      {
+      _isInitialized=true;
+      init(context,attrs,0,0);
+      }
     }
 
   public Preference(Context context)
     {
     super(context);
+    if(!_isInitialized)
+      {
+      _isInitialized=true;
+      init(context,null,0,0);
+      }
     }
 
   }
