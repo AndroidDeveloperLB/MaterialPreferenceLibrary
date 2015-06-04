@@ -14,7 +14,7 @@ Supported preferences are:
 - **SwitchPreference**
 - **TwoStatePreference**
 - **CheckBoxPreference**
-- Partial support for **PreferenceScreen**. It's partial since I can't extend from it (and can't give it to you to be used), so what I did is to at least set the same layout  for all PreferenceScreen classes.
+- Partial support for (inner) **PreferenceScreen**. It's partial since I can't extend from it (and can't give it to you to be used), so what I did is to at least set the same layout  for all PreferenceScreen classes.
  
 In addition to all of those, I've disabled the truncating of the text of all the supported preferences, so that translated text will still be fully shown. Do try ot make them short though.
 
