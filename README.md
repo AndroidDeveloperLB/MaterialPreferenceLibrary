@@ -18,6 +18,20 @@ Supported preferences are:
  
 In addition to all of those, I've disabled the truncating of the text of all the supported preferences, so that translated text will still be fully shown. Do try ot make them short though.
 
+Import 
+======
+View gradle:
+
+	repositories {
+	    maven {
+	        url "https://jitpack.io"
+	    }
+	}
+	
+		dependencies {
+	        compile 'com.github.AndroidDeveloperLB:MaterialPreferenceLibrary:1'
+	}
+
 Sample 
 ==================================
 Just check the code (it has a sample inside), or see how it works on my app, here:
