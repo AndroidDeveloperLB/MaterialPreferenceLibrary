@@ -20,13 +20,16 @@ In addition to all of those, I've disabled the truncating of the text of all the
 
 Import 
 ======
-View gradle:
+Via gradle (as shown here: https://jitpack.io/#AndroidDeveloperLB/MaterialPreferenceLibrary/1 ) :
 
-	repositories {
-	    maven {
-	        url "https://jitpack.io"
-	    }
-	}
+	allprojects {
+    		repositories {
+	        	jcenter()
+	        	maven {
+            		url "https://jitpack.io"
+        			}
+    			}
+		}
 	
 		dependencies {
 	        compile 'com.github.AndroidDeveloperLB:MaterialPreferenceLibrary:1'
