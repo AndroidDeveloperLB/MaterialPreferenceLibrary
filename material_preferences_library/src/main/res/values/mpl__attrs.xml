@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+  <declare-styleable name="PreferenceImageView">
+    <attr name="maxWidth" format="dimension"/>
+    <attr name="maxHeight" format="dimension"/>
+  </declare-styleable>
+
   <!--preferences:-->
+  <!-- Base attributes available to Preference. -->
+  <declare-styleable name="Preference">
+    <!-- The optional icon for the preference -->
+    <attr name="icon"/>
+  </declare-styleable>
+
   <!-- Default style for DialogPreference. -->
   <attr name="dialogPreferenceStyle" format="reference"/>
   <!-- Default style for EditTextPreference. -->
@@ -63,7 +74,7 @@
     <!-- The summary for the Preference in a PreferenceActivity screen when the
          SwitchPreference is unchecked. If separate on/off summaries are not
          needed, the summary attribute can be used instead. -->
-    <attr name="summaryOff" />
+    <attr name="summaryOff"/>
     <!-- The text used on the switch itself when in the "on" state.
          This should be a very SHORT string, as it appears in a small space. -->
     <attr name="switchTextOn" format="string"/>
@@ -72,9 +83,8 @@
     <attr name="switchTextOff" format="string"/>
     <!-- The state (true for on, or false for off) that causes dependents to be disabled. By default,
          dependents will be disabled when this is unchecked, so the value of this preference is false. -->
-    <attr name="disableDependentsState" />
+    <attr name="disableDependentsState"/>
   </declare-styleable>
-
 
 
 </resources>

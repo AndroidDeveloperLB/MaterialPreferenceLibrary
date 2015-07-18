@@ -36,24 +36,28 @@
   android:paddingStart="?attr/listPreferredItemPaddingLeft"
   tools:ignore="NewApi">
 
-  <!--<android.support.v7.widget.LinearLayoutCompat-->
-    <!--android:id="@+id/icon_frame"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_marginStart="-4dp"-->
-    <!--android:minWidth="60dp"-->
-    <!--android:gravity="start|center_vertical"-->
-    <!--android:orientation="horizontal"-->
-    <!--android:paddingEnd="12dp"-->
-    <!--android:paddingTop="4dp"-->
-    <!--android:paddingBottom="4dp">-->
-    <!--<com.android.internal.widget.PreferenceImageView-->
-      <!--android:id="@+id/icon"-->
-      <!--android:layout_width="wrap_content"-->
-      <!--android:layout_height="wrap_content"-->
-      <!--android:maxWidth="48dp"-->
-      <!--android:maxHeight="48dp" />-->
-  <!--</android.support.v7.widget.LinearLayoutCompat>-->
+  <android.support.v7.widget.LinearLayoutCompat
+    android:id="@+id/icon_frame"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="-4dp"
+    android:layout_marginStart="-4dp"
+    android:gravity="start|center_vertical"
+    android:minWidth="60dp"
+    android:orientation="horizontal"
+    android:paddingBottom="4dp"
+    android:paddingEnd="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="4dp">
+
+    <com.lb.material_preferences_library.internal.widget.PreferenceImageView
+      android:id="@+id/icon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:maxHeight="48dp"
+      android:maxWidth="48dp"
+      />
+  </android.support.v7.widget.LinearLayoutCompat>
 
   <RelativeLayout
     android:layout_width="0px"

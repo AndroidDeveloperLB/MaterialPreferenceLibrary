@@ -42,12 +42,12 @@
       app:negativeButtonText="@android:string/cancel"
       app:positiveButtonText="@android:string/ok"/>
 
-    <com.lb.material_preferences_library.custom_preferences.SwitchPreference
-      android:defaultValue="true"
-      android:key="switchPref"
-      android:title="SwitchPreference title"
-      app:summaryOff="summaryOff"
-      app:summaryOn="summaryOn"/>
+    <!--<com.lb.material_preferences_library.custom_preferences.SwitchPreference-->
+    <!--android:defaultValue="true"-->
+    <!--android:key="switchPref"-->
+    <!--android:title="SwitchPreference title"-->
+    <!--app:summaryOff="summaryOff"-->
+    <!--app:summaryOn="summaryOn"/>-->
 
     <com.lb.material_preferences_library.custom_preferences.CheckBoxPreference
       android:defaultValue="true"
@@ -59,6 +59,9 @@
 
   <PreferenceCategory
     android:title="Native Preferences">
+    <!--<SwitchPreference-->
+    <!--android:summary="just some summary text"-->
+    <!--android:title="switch"/>-->
     <Preference
       android:summary="just some summary text"
       android:title="A simple Preference"/>
