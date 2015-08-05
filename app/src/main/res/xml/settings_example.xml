@@ -5,6 +5,8 @@
       android:summary="just some summary text"
       android:title="A simple Preference"/>
 
+    <!--Note: for icons, you need to use this : app:icon="..." -->
+
     <com.lb.material_preferences_library.custom_preferences.ListPreference
       android:defaultValue="dark"
       android:key="@string/pref_theme"

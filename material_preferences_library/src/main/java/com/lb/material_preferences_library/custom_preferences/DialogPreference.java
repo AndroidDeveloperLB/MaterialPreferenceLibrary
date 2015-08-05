@@ -107,8 +107,7 @@ public abstract class DialogPreference extends Preference implements
     mDialogIcon=a.getDrawable(R.styleable.DialogPreference_dialogIcon);
     mPositiveButtonText=a.getString(R.styleable.DialogPreference_positiveButtonText);
     mNegativeButtonText=a.getString(R.styleable.DialogPreference_negativeButtonText);
-    mDialogLayoutResId=a.getResourceId(R.styleable.DialogPreference_dialogLayout,
-            mDialogLayoutResId);
+    mDialogLayoutResId=a.getResourceId(R.styleable.DialogPreference_dialogLayout,mDialogLayoutResId);
     a.recycle();
     }
 
@@ -143,7 +142,7 @@ public abstract class DialogPreference extends Preference implements
 
   /**
    * Sets the message of the dialog. This will be shown on subsequent dialogs.
-   * <p>
+   * <p/>
    * This message forms the content View of the dialog and conflicts with
    * list-based dialogs, for example. If setting a custom View on a dialog via
    * {@link #setDialogLayoutResource(int)}, include a text View with ID
@@ -294,7 +293,7 @@ public abstract class DialogPreference extends Preference implements
   /**
    * Prepares the dialog builder to be shown when the preference is clicked.
    * Use this to set custom properties on the dialog.
-   * <p>
+   * <p/>
    * Do not {@link AlertDialog.Builder#create()} or
    * {@link AlertDialog.Builder#show()}.
    */
@@ -397,7 +396,7 @@ public abstract class DialogPreference extends Preference implements
 
   /**
    * Binds views in the content View of the dialog to data.
-   * <p>
+   * <p/>
    * Make sure to call through to the superclass implementation.
    *
    * @param view The content View of the dialog, if it is custom.

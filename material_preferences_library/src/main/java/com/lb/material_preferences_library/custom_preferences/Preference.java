@@ -23,9 +23,9 @@ public class Preference extends android.preference.Preference
   protected void init(final Context context,final AttributeSet attrs,final int defStyleAttr,final int defStyleRes)
     {
     setLayoutResource(R.layout.mpl__preference);
-    final TypedArray a=context.obtainStyledAttributes(
-            attrs,R.styleable.Preference,defStyleAttr,defStyleRes);
-    _iconResId=a.getResourceId(a.getIndex(R.styleable.Preference_icon),0);
+    final TypedArray a=context.obtainStyledAttributes(attrs,R.styleable.Preference,defStyleAttr,defStyleRes);
+    _iconResId=a.getResourceId(R.styleable.Preference_icon,0);
+    a.recycle();
     }
 
   @TargetApi(VERSION_CODES.LOLLIPOP)

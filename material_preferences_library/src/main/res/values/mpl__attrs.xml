@@ -9,7 +9,7 @@
   <!-- Base attributes available to Preference. -->
   <declare-styleable name="Preference">
     <!-- The optional icon for the preference -->
-    <attr name="icon"/>
+    <attr name="icon" />
   </declare-styleable>
 
   <!-- Default style for DialogPreference. -->
