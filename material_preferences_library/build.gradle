@@ -1,5 +1,11 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'maven'
+apply plugin: 'signing'
+apply plugin: 'nexus-workflow'
+
+group = "com.lb.material_preferences_library"
+archivesBaseName = "material_preferences_library"
+version = "1.0"
 
 android {
     compileSdkVersion 22
@@ -9,7 +15,7 @@ android {
         minSdkVersion 7
         targetSdkVersion 22
         versionCode 1
-        versionName "1.0"
+        versionName version
     }
     buildTypes {
         release {
@@ -23,7 +29,62 @@ android {
     }
 }
 
+configurations {
+    archives {
+        extendsFrom configurations.default
+    }
+}
+
+signing {
+    sign configurations.archives
+}
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:22.2.1'
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+            repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
+                authentication(userName: ossrhUsername, password: ossrhPassword)
+            }
+
+            snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
+                authentication(userName: ossrhUsername, password: ossrhPassword)
+            }
+
+            pom.project {
+                name 'MaterialPreferenceLibrary'
+                packaging 'jar'
+                // optionally artifactId can be defined here
+                description 'Allows to have an ActionBar on PreferenceActivity, even on pre-Honeycomb versions of Android'
+                url 'https://github.com/AndroidDeveloperLB/MaterialPreferenceLibrary'
+
+                scm {
+                    connection 'scm:git:https://github.com/AndroidDeveloperLB/MaterialPreferenceLibrary.git'
+                    developerConnection 'scm:git:https://github.com/AndroidDeveloperLB/MaterialPreferenceLibrary.git'
+                    url 'https://github.com/AndroidDeveloperLB/MaterialPreferenceLibrary'
+                }
+
+                licenses {
+                    license {
+                        name 'The Apache License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id 'yourUsername'
+                        name 'Your Name'
+                        email 'your.email@example.com'
+                    }
+                }
+            }
+        }
+    }
 }

@@ -6,9 +6,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.2.3'
-        classpath 'com.github.dcendents:android-maven-plugin:1.2'
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath 'com.adaptc.gradle:nexus-workflow:0.6'
     }
 }
 
