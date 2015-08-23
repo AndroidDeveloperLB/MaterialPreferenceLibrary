@@ -1,104 +1,104 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:app="http://schemas.android.com/apk/res-auto">
-  <PreferenceCategory android:title="Material Preferences">
-    <com.lb.material_preferences_library.custom_preferences.Preference
-      android:summary="just some summary text"
-      android:title="A simple Preference"/>
+    <PreferenceCategory android:title="Material Preferences">
+        <com.lb.material_preferences_library.custom_preferences.Preference
+            android:summary="just some summary text"
+            android:title="A simple Preference"/>
 
-    <!--Note: for icons, you need to use this : app:icon="..." -->
+        <!--Note: for icons, you need to use this : app:icon="..." , example:  app:icon="@android:drawable/sym_def_app_icon" -->
 
-    <com.lb.material_preferences_library.custom_preferences.ListPreference
-      android:defaultValue="dark"
-      android:key="@string/pref_theme"
-      android:summary="%s"
-      android:title="Theme"
-      app:dialogTitle="dialog title"
-      app:entries="@array/pref_theme_list_entries"
-      app:entryValues="@array/pref_theme_list_values"/>
+        <com.lb.material_preferences_library.custom_preferences.ListPreference
+            android:defaultValue="dark"
+            android:key="@string/pref_theme"
+            android:summary="%s"
+            android:title="Theme"
+            app:dialogTitle="dialog title"
+            app:entries="@array/pref_theme_list_entries"
+            app:entryValues="@array/pref_theme_list_values"/>
 
-    <com.lb.material_preferences_library.custom_preferences.EditTextPreference
-      android:capitalize="words"
-      android:defaultValue="EditTextPreference default value"
-      android:inputType="textCapWords"
-      android:key="custom_example_edittext"
-      android:maxLines="1"
-      android:selectAllOnFocus="true"
-      android:singleLine="true"
-      android:summary="EditTextPreference summary"
-      android:title="EditTextPreference title"
-      app:dialogMessage="editText dialogMessage"
-      app:negativeButtonText="@android:string/cancel"
-      app:positiveButtonText="@android:string/ok"/>
+        <com.lb.material_preferences_library.custom_preferences.EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="EditTextPreference default value"
+            android:inputType="textCapWords"
+            android:key="custom_example_edittext"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="EditTextPreference summary"
+            android:title="EditTextPreference title"
+            app:dialogMessage="editText dialogMessage"
+            app:negativeButtonText="@android:string/cancel"
+            app:positiveButtonText="@android:string/ok"/>
 
-    <com.lb.material_preferences_library.custom_preferences.NumberEditTextPreference
-      android:capitalize="words"
-      android:defaultValue="123"
-      android:inputType="textCapWords"
-      android:key="custom_example_numberedittext"
-      android:maxLines="1"
-      android:selectAllOnFocus="true"
-      android:singleLine="true"
-      android:summary="Like EditTextPreference, but allows only numbers to be used"
-      android:title="NumberEditTextPreference title"
-      app:dialogMessage="NumberEditTextPreference dialogMessage"
-      app:negativeButtonText="@android:string/cancel"
-      app:positiveButtonText="@android:string/ok"/>
+        <com.lb.material_preferences_library.custom_preferences.NumberEditTextPreference
+            android:capitalize="words"
+            android:defaultValue="123"
+            android:inputType="textCapWords"
+            android:key="custom_example_numberedittext"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Like EditTextPreference, but allows only numbers to be used"
+            android:title="NumberEditTextPreference title"
+            app:dialogMessage="NumberEditTextPreference dialogMessage"
+            app:negativeButtonText="@android:string/cancel"
+            app:positiveButtonText="@android:string/ok"/>
 
-    <!--<com.lb.material_preferences_library.custom_preferences.SwitchPreference-->
-    <!--android:defaultValue="true"-->
-    <!--android:key="switchPref"-->
-    <!--android:title="SwitchPreference title"-->
-    <!--app:summaryOff="summaryOff"-->
-    <!--app:summaryOn="summaryOn"/>-->
+        <!--<com.lb.material_preferences_library.custom_preferences.SwitchPreference-->
+        <!--android:defaultValue="true"-->
+        <!--android:key="switchPref"-->
+        <!--android:title="SwitchPreference title"-->
+        <!--app:summaryOff="summaryOff"-->
+        <!--app:summaryOn="summaryOn"/>-->
 
-    <com.lb.material_preferences_library.custom_preferences.CheckBoxPreference
-      android:defaultValue="true"
-      android:key="checkboxPref"
-      android:summary="CheckBoxPreference summary"
-      android:title="CheckBoxPreference title"
-      />
-  </PreferenceCategory>
+        <com.lb.material_preferences_library.custom_preferences.CheckBoxPreference
+            android:defaultValue="true"
+            android:key="checkboxPref"
+            android:summary="CheckBoxPreference summary"
+            android:title="CheckBoxPreference title"
+            />
+    </PreferenceCategory>
 
-  <PreferenceCategory
-    android:title="Native Preferences">
-    <!--<SwitchPreference-->
-    <!--android:summary="just some summary text"-->
-    <!--android:title="switch"/>-->
-    <Preference
-      android:summary="just some summary text"
-      android:title="A simple Preference"/>
-    <CheckBoxPreference
-      android:defaultValue="true"
-      android:key="example_checkbox"
-      android:summary="CheckBoxPreference summary"
-      android:title="CheckBoxPreference title"/>
+    <PreferenceCategory
+        android:title="Native Preferences">
+        <!--<SwitchPreference-->
+        <!--android:summary="just some summary text"-->
+        <!--android:title="switch"/>-->
+        <Preference
+            android:summary="just some summary text"
+            android:title="A simple Preference"/>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="example_checkbox"
+            android:summary="CheckBoxPreference summary"
+            android:title="CheckBoxPreference title"/>
 
-    <EditTextPreference
-      android:capitalize="words"
-      android:defaultValue="EditTextPreference default value"
-      android:dialogMessage="editText dialogMessage"
-      android:inputType="textCapWords"
-      android:key="custom_example_edittext"
-      android:maxLines="1"
-      android:negativeButtonText="@android:string/cancel"
-      android:positiveButtonText="@android:string/ok"
-      android:selectAllOnFocus="true"
-      android:singleLine="true"
-      android:summary="EditTextPreference summary"
-      android:title="EditTextPreference title"/>
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="EditTextPreference default value"
+            android:dialogMessage="editText dialogMessage"
+            android:inputType="textCapWords"
+            android:key="custom_example_edittext"
+            android:maxLines="1"
+            android:negativeButtonText="@android:string/cancel"
+            android:positiveButtonText="@android:string/ok"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="EditTextPreference summary"
+            android:title="EditTextPreference title"/>
 
-    <ListPreference
-      android:defaultValue="item1"
-      android:dialogTitle="dialog title"
-      android:entries="@array/pref_example_list_entries"
-      android:entryValues="@array/pref_example_list_values"
-      android:key="example_list"
-      android:negativeButtonText="@null"
-      android:positiveButtonText="@null"
-      android:summary="%s"
-      android:title="ListPreference title"/>
+        <ListPreference
+            android:defaultValue="item1"
+            android:dialogTitle="dialog title"
+            android:entries="@array/pref_example_list_entries"
+            android:entryValues="@array/pref_example_list_values"
+            android:key="example_list"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="%s"
+            android:title="ListPreference title"/>
 
-  </PreferenceCategory>
+    </PreferenceCategory>
 
 
 </PreferenceScreen>
