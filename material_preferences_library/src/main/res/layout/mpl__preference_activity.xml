@@ -25,7 +25,8 @@
     <ListView
       android:id="@android:id/list"
       android:layout_width="match_parent"
-      android:layout_height="match_parent"/>
+      android:layout_height="match_parent"
+      android:listSelector="@drawable/mpl__custom_ripple_effect_background"/>
 
     <ImageView
       android:id="@+id/abp__shadowView"
