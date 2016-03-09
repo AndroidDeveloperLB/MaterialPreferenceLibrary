@@ -30,20 +30,6 @@
             app:negativeButtonText="@android:string/cancel"
             app:positiveButtonText="@android:string/ok"/>
 
-        <com.lb.material_preferences_library.custom_preferences.NumberEditTextPreference
-            android:capitalize="words"
-            android:defaultValue="123"
-            android:inputType="textCapWords"
-            android:key="custom_example_numberedittext"
-            android:maxLines="1"
-            android:selectAllOnFocus="true"
-            android:singleLine="true"
-            android:summary="Like EditTextPreference, but allows only numbers to be used"
-            android:title="NumberEditTextPreference title"
-            app:dialogMessage="NumberEditTextPreference dialogMessage"
-            app:negativeButtonText="@android:string/cancel"
-            app:positiveButtonText="@android:string/ok"/>
-
         <!--<com.lb.material_preferences_library.custom_preferences.SwitchPreference-->
         <!--android:defaultValue="true"-->
         <!--android:key="switchPref"-->

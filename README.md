@@ -9,7 +9,6 @@ Supported preferences are:
 - **DialogPreference**
 - **EditTextPreference**
 - **ListPreference**
-- **NumberEditTextPreference** - a customized preference I've made, that's like EditTextPreference, but allows to enters digits only.
 - **Preference**
 - **SwitchPreference**
 - **TwoStatePreference**

@@ -5,6 +5,7 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
+        vectorDrawables.useSupportLibrary = true
         applicationId "com.lb.material_preferences"
         minSdkVersion 7
         targetSdkVersion 23
