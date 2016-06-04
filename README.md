@@ -34,7 +34,7 @@ Via gradle :
 	        compile 'com.github.AndroidDeveloperLB:MaterialPreferenceLibrary:###'
 	}
 	
-Where "###" is the number as shown here: https://jitpack.io/#AndroidDeveloperLB/MaterialPreferenceLibrary/ .
+where "###" is the number as shown here: https://jitpack.io/#AndroidDeveloperLB/MaterialPreferenceLibrary/ .
 
 	
 
