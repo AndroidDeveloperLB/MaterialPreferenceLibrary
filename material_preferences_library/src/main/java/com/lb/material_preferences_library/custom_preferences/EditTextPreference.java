@@ -23,7 +23,6 @@ import android.content.res.TypedArray;
 import android.os.Build.VERSION_CODES;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.v7.app.AlertDialog.Builder;
 import android.support.v7.widget.AppCompatEditText;
 import android.text.TextUtils;
 import android.util.AttributeSet;
@@ -46,44 +45,38 @@ import com.lb.material_preferences_library.R;
  * This preference will store a string into the SharedPreferences.
  * <p>
  */
-public class EditTextPreference extends DialogPreference
-  {
-  /**
-   * The edit text shown in the dialog.
-   */
-  private EditText mEditText;
+public class EditTextPreference extends DialogPreference {
+    /**
+     * The edit text shown in the dialog.
+     */
+    private EditText mEditText;
 
-  private String mText;
+    private String mText;
 
-  @TargetApi(VERSION_CODES.LOLLIPOP)
-  public EditTextPreference(Context context,AttributeSet attrs,int defStyleAttr,int defStyleRes)
-    {
-    super(context,attrs,defStyleAttr,defStyleRes);
+    @TargetApi(VERSION_CODES.LOLLIPOP)
+    public EditTextPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
     }
 
-  public EditTextPreference(Context context,AttributeSet attrs,int defStyleAttr)
-    {
-    super(context,attrs,defStyleAttr);
+    public EditTextPreference(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
     }
 
-  public EditTextPreference(Context context,AttributeSet attrs)
-    {
-    this(context,attrs,R.attr.editTextPreferenceStyle);
+    public EditTextPreference(Context context, AttributeSet attrs) {
+        this(context, attrs, R.attr.editTextPreferenceStyle);
     }
 
-  public EditTextPreference(Context context)
-    {
-    this(context,null);
+    public EditTextPreference(Context context) {
+        this(context, null);
     }
 
-  @Override
-  protected void init(final Context context,final AttributeSet attrs,final int defStyleAttr,final int defStyleRes)
-    {
-    super.init(context,attrs,defStyleAttr,defStyleRes);
-    mEditText=new AppCompatEditText(context,attrs);
+    @Override
+    protected void init(final Context context, final AttributeSet attrs, final int defStyleAttr, final int defStyleRes) {
+        super.init(context, attrs, defStyleAttr, defStyleRes);
+        mEditText = new AppCompatEditText(context, attrs);
 
-    // Give it an ID so it can be saved/restored
-    mEditText.setId(android.R.id.edit);
+        // Give it an ID so it can be saved/restored
+        mEditText.setId(android.R.id.edit);
 
         /*
          * The preference framework and view framework both have an 'enabled'
@@ -91,188 +84,161 @@ public class EditTextPreference extends DialogPreference
          * the preference framework, but it was also given to the view framework.
          * We reset the enabled state.
          */
-    mEditText.setEnabled(true);
-    setDialogLayoutResource(R.layout.mpl__edittext_dialog_preference);
+        mEditText.setEnabled(true);
+        setDialogLayoutResource(R.layout.mpl__edittext_dialog_preference);
     }
 
-  /**
-   * Saves the text to the {@link SharedPreferences}.
-   *
-   * @param text The text to save
-   */
-  public void setText(String text)
-    {
-    final boolean wasBlocking=shouldDisableDependents();
+    /**
+     * Saves the text to the {@link SharedPreferences}.
+     *
+     * @param text The text to save
+     */
+    public void setText(String text) {
+        final boolean wasBlocking = shouldDisableDependents();
 
-    mText=text;
+        mText = text;
 
-    persistString(text);
+        persistString(text);
 
-    final boolean isBlocking=shouldDisableDependents();
-    if(isBlocking!=wasBlocking)
-      {
-      notifyDependencyChange(isBlocking);
-      }
-    }
-
-  /**
-   * Gets the text from the {@link SharedPreferences}.
-   *
-   * @return The current preference value.
-   */
-  public String getText()
-    {
-    return mText;
-    }
-
-  @Override
-  protected void onBindDialogView(View view)
-    {
-    super.onBindDialogView(view);
-
-    EditText editText=mEditText;
-    editText.setText(getText());
-
-    ViewParent oldParent=editText.getParent();
-    if(oldParent!=view)
-      {
-      if(oldParent!=null)
-        {
-        ((ViewGroup)oldParent).removeView(editText);
+        final boolean isBlocking = shouldDisableDependents();
+        if (isBlocking != wasBlocking) {
+            notifyDependencyChange(isBlocking);
         }
-      onAddEditTextToDialogView(view,editText);
-      }
     }
 
-  /**
-   * Adds the EditText widget of this preference to the dialog's view.
-   *
-   * @param dialogView The dialog view.
-   */
-  protected void onAddEditTextToDialogView(View dialogView,EditText editText)
-    {
-    ViewGroup container=(ViewGroup)dialogView
-            .findViewById(R.id.edittext_container);
-    if(container!=null)
-      {
-      container.addView(editText,ViewGroup.LayoutParams.MATCH_PARENT,
-              ViewGroup.LayoutParams.WRAP_CONTENT);
-      }
+    /**
+     * Gets the text from the {@link SharedPreferences}.
+     *
+     * @return The current preference value.
+     */
+    public String getText() {
+        return mText;
     }
-
-  @Override
-  protected void onDialogClosed(boolean positiveResult)
-    {
-    super.onDialogClosed(positiveResult);
-    if(positiveResult)
-      {
-      String value=mEditText.getText().toString();
-      if(callChangeListener(value))
-        {
-        setText(value);
-        }
-      }
-    }
-
-  @Override
-  protected Object onGetDefaultValue(TypedArray a,int index)
-    {
-    return a.getString(index);
-    }
-
-  @Override
-  protected void onSetInitialValue(boolean restoreValue,Object defaultValue)
-    {
-    setText(restoreValue?getPersistedString(mText):(String)defaultValue);
-    }
-
-  @Override
-  public boolean shouldDisableDependents()
-    {
-    return TextUtils.isEmpty(mText)||super.shouldDisableDependents();
-    }
-
-  /**
-   * Returns the {@link EditText} widget that will be shown in the dialog.
-   *
-   * @return The {@link EditText} widget that will be shown in the dialog.
-   */
-  public EditText getEditText()
-    {
-    return mEditText;
-    }
-
-  protected boolean needInputMethod()
-    {
-    // We want the input method to show, if possible, when dialog is displayed
-    return true;
-    }
-
-  @Override
-  protected Parcelable onSaveInstanceState()
-    {
-    final Parcelable superState=super.onSaveInstanceState();
-    if(isPersistent())
-      {
-      // No need to save instance state since it's persistent
-      return superState;
-      }
-
-    final SavedState myState=new SavedState(superState);
-    myState.text=getText();
-    return myState;
-    }
-
-  @Override
-  protected void onRestoreInstanceState(Parcelable state)
-    {
-    if(state==null||!state.getClass().equals(SavedState.class))
-      {
-      // Didn't save state for us in onSaveInstanceState
-      super.onRestoreInstanceState(state);
-      return;
-      }
-
-    SavedState myState=(SavedState)state;
-    super.onRestoreInstanceState(myState.getSuperState());
-    setText(myState.text);
-    }
-
-  private static class SavedState extends BaseSavedState
-    {
-    String text;
-
-    public SavedState(Parcel source)
-      {
-      super(source);
-      text=source.readString();
-      }
 
     @Override
-    public void writeToParcel(Parcel dest,int flags)
-      {
-      super.writeToParcel(dest,flags);
-      dest.writeString(text);
-      }
+    protected void onBindDialogView(View view) {
+        super.onBindDialogView(view);
 
-    public SavedState(Parcelable superState)
-      {
-      super(superState);
-      }
+        EditText editText = mEditText;
+        editText.setText(getText());
 
-    public static final Creator<SavedState> CREATOR=
-            new Creator<SavedState>()
-            {
-            public SavedState createFromParcel(Parcel in)
-              {
-              return new SavedState(in);
-              }
-
-            public SavedState[] newArray(int size)
-              {
-              return new SavedState[size];
-              }
-            };
+        ViewParent oldParent = editText.getParent();
+        if (oldParent != view) {
+            if (oldParent != null) {
+                ((ViewGroup) oldParent).removeView(editText);
+            }
+            onAddEditTextToDialogView(view, editText);
+        }
     }
 
-  }
+    /**
+     * Adds the EditText widget of this preference to the dialog's view.
+     *
+     * @param dialogView The dialog view.
+     */
+    protected void onAddEditTextToDialogView(View dialogView, EditText editText) {
+        ViewGroup container = (ViewGroup) dialogView
+                .findViewById(R.id.edittext_container);
+        if (container != null) {
+            container.addView(editText, ViewGroup.LayoutParams.MATCH_PARENT,
+                    ViewGroup.LayoutParams.WRAP_CONTENT);
+        }
+    }
+
+    @Override
+    protected void onDialogClosed(boolean positiveResult) {
+        super.onDialogClosed(positiveResult);
+        if (positiveResult) {
+            String value = mEditText.getText().toString();
+            if (callChangeListener(value)) {
+                setText(value);
+            }
+        }
+    }
+
+    @Override
+    protected Object onGetDefaultValue(TypedArray a, int index) {
+        return a.getString(index);
+    }
+
+    @Override
+    protected void onSetInitialValue(boolean restoreValue, Object defaultValue) {
+        setText(restoreValue ? getPersistedString(mText) : (String) defaultValue);
+    }
+
+    @Override
+    public boolean shouldDisableDependents() {
+        return TextUtils.isEmpty(mText) || super.shouldDisableDependents();
+    }
+
+    /**
+     * Returns the {@link EditText} widget that will be shown in the dialog.
+     *
+     * @return The {@link EditText} widget that will be shown in the dialog.
+     */
+    public EditText getEditText() {
+        return mEditText;
+    }
+
+    protected boolean needInputMethod() {
+        // We want the input method to show, if possible, when dialog is displayed
+        return true;
+    }
+
+    @Override
+    protected Parcelable onSaveInstanceState() {
+        final Parcelable superState = super.onSaveInstanceState();
+        if (isPersistent()) {
+            // No need to save instance state since it's persistent
+            return superState;
+        }
+
+        final SavedState myState = new SavedState(superState);
+        myState.text = getText();
+        return myState;
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Parcelable state) {
+        if (state == null || !state.getClass().equals(SavedState.class)) {
+            // Didn't save state for us in onSaveInstanceState
+            super.onRestoreInstanceState(state);
+            return;
+        }
+
+        SavedState myState = (SavedState) state;
+        super.onRestoreInstanceState(myState.getSuperState());
+        setText(myState.text);
+    }
+
+    private static class SavedState extends BaseSavedState {
+        String text;
+
+        public SavedState(Parcel source) {
+            super(source);
+            text = source.readString();
+        }
+
+        @Override
+        public void writeToParcel(Parcel dest, int flags) {
+            super.writeToParcel(dest, flags);
+            dest.writeString(text);
+        }
+
+        public SavedState(Parcelable superState) {
+            super(superState);
+        }
+
+        public static final Creator<SavedState> CREATOR =
+                new Creator<SavedState>() {
+                    public SavedState createFromParcel(Parcel in) {
+                        return new SavedState(in);
+                    }
+
+                    public SavedState[] newArray(int size) {
+                        return new SavedState[size];
+                    }
+                };
+    }
+
+}

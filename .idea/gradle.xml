@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/material_preferences_library" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>
