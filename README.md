@@ -1,3 +1,5 @@
+[![Release](https://img.shields.io/github/release/AndroidDeveloperLB/MaterialPreferenceLibrary.svg?style=flat)](https://jitpack.io/#AndroidDeveloperLB/MaterialPreferenceLibrary)
+
 MaterialPreferenceLibrary
 ==================================
 
