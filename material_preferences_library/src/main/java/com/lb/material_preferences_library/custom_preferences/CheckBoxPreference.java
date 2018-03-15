@@ -34,48 +34,41 @@ import com.lb.material_preferences_library.R;
  * @attr ref android.R.styleable#CheckBoxPreference_summaryOn
  * @attr ref android.R.styleable#CheckBoxPreference_disableDependentsState
  */
-public class CheckBoxPreference extends TwoStatePreference
-  {
+public class CheckBoxPreference extends TwoStatePreference {
 
-  public CheckBoxPreference(Context context,AttributeSet attrs,int defStyleAttr)
-    {
-    super(context,attrs,defStyleAttr);
+    public CheckBoxPreference(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
     }
 
-  public CheckBoxPreference(Context context,AttributeSet attrs,int defStyleAttr,int defStyleRes)
-    {
-    super(context,attrs,defStyleAttr,defStyleRes);
+    public CheckBoxPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
     }
 
-  @Override
-  protected void init(final Context context,final AttributeSet attrs,final int defStyleAttr,final int defStyleRes)
-    {
-    super.init(context,attrs,defStyleAttr,defStyleRes);
-    setWidgetLayoutResource(R.layout.mpl__preference_widget_checkbox);
-    final TypedArray a=context.obtainStyledAttributes(attrs,R.styleable.CheckBoxPreference,defStyleAttr,defStyleRes);
-    setSummaryOn(a.getString(R.styleable.CheckBoxPreference_summaryOn));
-    setSummaryOff(a.getString(R.styleable.CheckBoxPreference_summaryOff));
-    setDisableDependentsState(a.getBoolean(R.styleable.CheckBoxPreference_disableDependentsState,false));
-    a.recycle();
+    @Override
+    protected void init(final Context context, final AttributeSet attrs, final int defStyleAttr, final int defStyleRes) {
+        super.init(context, attrs, defStyleAttr, defStyleRes);
+        setWidgetLayoutResource(R.layout.mpl__preference_widget_checkbox);
+        final TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CheckBoxPreference, defStyleAttr, defStyleRes);
+        setSummaryOn(a.getString(R.styleable.CheckBoxPreference_summaryOn));
+        setSummaryOff(a.getString(R.styleable.CheckBoxPreference_summaryOff));
+        setDisableDependentsState(a.getBoolean(R.styleable.CheckBoxPreference_disableDependentsState, false));
+        a.recycle();
     }
 
-  public CheckBoxPreference(Context context,AttributeSet attrs)
-    {
-    this(context,attrs,R.attr.checkBoxPreferenceStyle);
+    public CheckBoxPreference(Context context, AttributeSet attrs) {
+        this(context, attrs, R.attr.checkBoxPreferenceStyle);
     }
 
-  public CheckBoxPreference(Context context)
-    {
-    this(context,null);
+    public CheckBoxPreference(Context context) {
+        this(context, null);
     }
 
-  @Override
-  protected void onBindView(View view)
-    {
-    super.onBindView(view);
-    View checkboxView=view.findViewById(android.R.id.checkbox);
-    if(checkboxView!=null&&checkboxView instanceof Checkable)
-      ((Checkable)checkboxView).setChecked(mChecked);
-    syncSummaryView(view);
+    @Override
+    protected void onBindView(View view) {
+        super.onBindView(view);
+        View checkboxView = view.findViewById(android.R.id.checkbox);
+        if (checkboxView != null && checkboxView instanceof Checkable)
+            ((Checkable) checkboxView).setChecked(mChecked);
+        syncSummaryView(view);
     }
-  }
+}
