@@ -3,7 +3,7 @@
 MaterialPreferenceLibrary
 ==================================
 
-Allows to have a nice Material-Design look&feel for API 7 and above for the PreferenceActivity, including most commonly used preferences and also showing the actionBar.
+Allows to have a nice Material-Design look&feel for API 14 (even below if you use release 10 of the library) and above for the PreferenceActivity, including most commonly used preferences and also showing the actionBar.
 All the dialogs are using the support library's dialogs, including accent-color.
 You can even choose which theme to use.
 
@@ -80,7 +80,7 @@ Contribution is appreciated. Please try to be "loyal" to the original code of An
 Requirements
 ==
 This library needs:
- - API 14 and above (release 10 supports even below).
+ - Android API 14 and above (release 10 supports even below).
  - AppCompat v7.
 
 That's it.
