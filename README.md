@@ -80,7 +80,7 @@ Contribution is appreciated. Please try to be "loyal" to the original code of An
 Requirements
 ==
 This library needs:
- - API 7 and above.
+ - API 14 and above (release 10 supports even below).
  - AppCompat v7.
 
 That's it.
