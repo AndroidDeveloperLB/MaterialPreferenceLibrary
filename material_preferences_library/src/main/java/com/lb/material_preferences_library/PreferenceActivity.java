@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
-import androidx.annotation.XmlRes;
-import androidx.appcompat.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +14,9 @@ import android.view.ViewGroup;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
+
+import androidx.annotation.XmlRes;
+import androidx.appcompat.widget.Toolbar;
 
 public abstract class PreferenceActivity extends AppCompatPreferenceActivity {
     private Toolbar _toolbar;
@@ -45,7 +46,7 @@ public abstract class PreferenceActivity extends AppCompatPreferenceActivity {
         addPreferencesFromResource(getPreferencesXmlId());
         final Map<Preference, PreferenceGroup> preferenceToParentMap = buildPreferenceParentTree(this);
         for (PreferenceGroup preferenceGroup : preferenceToParentMap.values())
-            if (preferenceGroup != null && preferenceGroup instanceof PreferenceScreen)
+            if (preferenceGroup instanceof PreferenceScreen)
                 preferenceGroup.setLayoutResource(R.layout.mpl__preference);
         _toolbar.setClickable(true);
         _toolbar.setNavigationIcon(getResIdFromAttribute(this, R.attr.homeAsUpIndicator));

@@ -17,7 +17,7 @@
      inside android.R.layout.preference. -->
 <androidx.appcompat.widget.AppCompatCheckBox xmlns:android="http://schemas.android.com/apk/res/android"
                                              xmlns:tools="http://schemas.android.com/tools"
-                                             android:id="@+android:id/checkbox"
+                                             android:id="@android:id/checkbox"
                                              android:layout_width="wrap_content"
                                              android:layout_height="wrap_content"
                                              android:background="@null"

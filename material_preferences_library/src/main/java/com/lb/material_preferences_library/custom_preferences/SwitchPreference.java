@@ -2,13 +2,14 @@ package com.lb.material_preferences_library.custom_preferences;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import androidx.appcompat.widget.SwitchCompat;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Checkable;
 import android.widget.CompoundButton;
 
 import com.lb.material_preferences_library.R;
+
+import androidx.appcompat.widget.SwitchCompat;
 
 /**
  * A {@link Preference} that provides a two-state toggleable option.
@@ -114,7 +115,7 @@ public class SwitchPreference extends TwoStatePreference {
     protected void onBindView(View view) {
         super.onBindView(view);
         View checkableView = view.findViewById(android.R.id.checkbox);
-        if (checkableView != null && checkableView instanceof Checkable) {
+        if (checkableView instanceof Checkable) {
             if (checkableView instanceof SwitchCompat) {
                 final SwitchCompat switchView = (SwitchCompat) checkableView;
                 switchView.setOnCheckedChangeListener(null);

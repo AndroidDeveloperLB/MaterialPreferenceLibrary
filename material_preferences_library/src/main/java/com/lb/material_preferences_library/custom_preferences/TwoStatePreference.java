@@ -79,7 +79,7 @@ public abstract class TwoStatePreference extends Preference {
 
     @Override
     public boolean shouldDisableDependents() {
-        boolean shouldDisable = mDisableDependentsState ? mChecked : !mChecked;
+        boolean shouldDisable = mDisableDependentsState == mChecked;
         return shouldDisable || super.shouldDisableDependents();
     }
 
