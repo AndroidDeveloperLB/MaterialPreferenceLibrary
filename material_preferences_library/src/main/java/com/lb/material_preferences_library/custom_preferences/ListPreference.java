@@ -21,7 +21,7 @@ import android.content.DialogInterface;
 import android.content.res.TypedArray;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.v7.app.AlertDialog.Builder;
+import androidx.appcompat.app.AlertDialog.Builder;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.widget.ArrayAdapter;

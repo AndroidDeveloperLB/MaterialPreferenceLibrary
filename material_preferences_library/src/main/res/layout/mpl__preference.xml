@@ -20,7 +20,7 @@
 <!--NOTE: original background was :   android:background="?android:attr/activatedBackgroundIndicator"-->
 
 
-<android.support.v7.widget.LinearLayoutCompat
+<androidx.appcompat.widget.LinearLayoutCompat
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
@@ -35,7 +35,7 @@
   android:paddingStart="?attr/listPreferredItemPaddingLeft"
   tools:ignore="NewApi">
 
-  <android.support.v7.widget.LinearLayoutCompat
+  <androidx.appcompat.widget.LinearLayoutCompat
     android:id="@+id/icon_frame"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
       android:maxHeight="48dp"
       android:maxWidth="48dp"
       />
-  </android.support.v7.widget.LinearLayoutCompat>
+  </androidx.appcompat.widget.LinearLayoutCompat>
 
   <RelativeLayout
     android:layout_width="0px"
@@ -65,7 +65,7 @@
     android:paddingBottom="16dp"
     android:paddingTop="16dp">
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
       android:id="@android:id/title"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
       tools:text="title"/>
 
     <!--NOTE: original: android:textAppearance="?attr/textAppearanceListItemSecondary"-->
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
       android:id="@android:id/summary"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
   </RelativeLayout>
 
   <!-- Preference should place its actual preference widget here. -->
-  <android.support.v7.widget.LinearLayoutCompat
+  <androidx.appcompat.widget.LinearLayoutCompat
     android:id="@android:id/widget_frame"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
@@ -96,4 +96,4 @@
     android:paddingLeft="16dp"
     android:paddingStart="16dp"/>
 
-</android.support.v7.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

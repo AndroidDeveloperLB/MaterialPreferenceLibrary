@@ -29,7 +29,7 @@ import com.lb.material_preferences_library.R;
  *
  * @hide
  */
-public class PreferenceImageView extends android.support.v7.widget.AppCompatImageView {
+public class PreferenceImageView extends androidx.appcompat.widget.AppCompatImageView {
 
     private int mMaxWidth = Integer.MAX_VALUE;
     private int mMaxHeight = Integer.MAX_VALUE;

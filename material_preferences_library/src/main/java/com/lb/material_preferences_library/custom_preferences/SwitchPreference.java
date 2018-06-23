@@ -2,7 +2,7 @@ package com.lb.material_preferences_library.custom_preferences;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.v7.widget.SwitchCompat;
+import androidx.appcompat.widget.SwitchCompat;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Checkable;
