@@ -32,7 +32,7 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'androidx.appcompat:appcompat:1.0.0-alpha3'
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
     implementation project(':material_preferences_library')
 //    compile 'com.github.AndroidDeveloperLB:MaterialPreferenceLibrary:7'
 
