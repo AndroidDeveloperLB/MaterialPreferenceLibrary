@@ -1,5 +1,7 @@
 [![Release](https://img.shields.io/github/release/AndroidDeveloperLB/MaterialPreferenceLibrary.svg?style=flat)](https://jitpack.io/#AndroidDeveloperLB/MaterialPreferenceLibrary)
 
+Note : This library is not developed anymore, as there is an official way to support old Android versions with preferences that have same material design style, by using PreferenceFragmentCompat : https://developer.android.com/reference/android/support/v7/preference/PreferenceFragmentCompat
+
 MaterialPreferenceLibrary
 ==================================
 
